@@ -9,35 +9,51 @@
 
    .container{todas la etiquetas
     }
-    
+
     #inicio{solo una etiqueta o id
     }
 */
 
-.container{
-    border: red solid 1px;
+body{
+    background-color: rgb(236, 144, 30);
 }
+
+header{
+    border: black solid 5px;
+
+}
+main{
+    border: black solid 5px;
+
+
+}
+footer{
+    border: black solid 5px;
+
+}
+
+
 nav{
-    border: blue solid 1px;
+    border: blue solid 5px;
 }
 
 #inicio{
-    border: green solid 5px;
+    border: rgb(0, 248, 0) solid 5px;
 }
 
 #nosotros{
-    border: rgb(210, 224, 2) solid 5px;
+    border: rgb(0, 248, 0) solid 5px;
 }
 
 #servicios{
-    border: rgb(253, 94, 2) solid 5px;
+    border: rgb(0, 248, 0) solid 5px;
 }
 
 #galeria{
-    border: rgb(255, 3, 242) solid 5px;
+    border: rgb(0, 248, 0) solid 5px;
 }
 
 #Contactenos{
-    border: rgb(0, 243, 231) solid 5px;
+    border: rgb(0, 248, 0) solid 5px;
 
 }
