@@ -4,15 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inicio</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="imagenes/favicon.png">
-    </head>
-    <body>
+        <title>Inicio</title><!--Hace referencia al titulo de la pestaña de la pagina-->
+        <link rel="stylesheet" href="style.css"><!--Hace un enlace con el archivo CSS-->
+        <link rel="shortcut icon" href="imagenes/favicon.png"><!--Hace referencia al icono de la pestaña de la pagina-->
+    </head><!--Finaliza la etiqueta head-->
+
+    <body><!--Inicia el cuerpo de la pagina (informacion visible)-->
         <header>
             <div class="container">
                 <a href="index.html">
-                    <img src="imagenes/logo.svg">
+                    <img src="imagenes/logo.svg" class="logo">
                 </a><!--<a></a>Crear enlaces-->
                 <nav>
                     <a href="#inicio">Inicio</a>
@@ -23,7 +24,9 @@
                 </nav>
             </div>
         </header><!--Cabecera-->
+
         <main>
+            <!--------------------------------------Inicio---------------------------------------------------->
             <section id="inicio">
                 <img src="imagenes/bannerprincipal.jpg" alt="">
                 <div class="bloque-inicio"></div>
@@ -36,17 +39,36 @@
                     </p>
                     <a href="#nosotros" class="boton">Ver más</a>
             </section>
+            <!------------------------------------------------------------------------------------------>
+
+            <!--------------------------------------Nosostros---------------------------------------------------->
             <section id="nosotros">
-                
+                <div class="container">
+                    <p>There are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form,
+                        by injected humour, or randomised words which don't look even slightly believable.
+                        If you are going to use a passage of Lorem Ipsum,
+                        you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                    </p>
+                </div>
             </section>
+            <!------------------------------------------------------------------------------------------>
+
+
+
+
+            <!---------------------------------Servicios--------------------------------------------------------->
             <section id="servicios">
                 <div class="container">
                     <div class="row">
+
                         <div class="columna columna-33">
                             <div class="bloque-servicio">
+
                                 <div class="bloque-img-servicio">
                                     <img src="imagenes/servicio1.jpg" alt="">
                                 </div>
+
                                 <div class="bloque-contenido-servicio">
                                     <h3>Servicio 1</h3>
                                     <p>
@@ -57,13 +79,17 @@
                                     </p>
                                     <a href="#" class="boton">Ver más</a>
                                 </div>
+
                             </div>
                         </div>
+
                         <div class="columna columna-33">
                             <div class="bloque-servicio">
+
                                 <div class="bloque-img-servicio">
                                     <img src="imagenes/servicio2.jpg" alt="">
                                 </div>
+
                                 <div class="bloque-contenido-servicio">
                                     <h3>Servicio 2</h3>
                                     <p>
@@ -74,13 +100,17 @@
                                     </p>
                                     <a href="#" class="boton">Ver más</a>
                                 </div>
+
                             </div>
                         </div>
+
                         <div class="columna columna-33">
                             <div class="bloque-servicio">
+
                                 <div class="bloque-img-servicio">
                                     <img src="imagenes/servicio3.jpg" alt="">
                                 </div>
+
                                 <div class="bloque-contenido-servicio">
                                     <h3>Servicio 3</h3>
                                     <p>
@@ -91,12 +121,16 @@
                                     </p>
                                     <a href="#" class="boton">Ver más</a>
                                 </div>
+
                             </div>
                         </div>
+
                     </div>
-                </div>
-                
+                </div>  
             </section>
+            <!---------------------------------Servicios--------------------------------------------------------->
+
+            <!---------------------------------Galeria--------------------------------------------------------->
             <section id="galeria">
                 <div class="container-fluid">
                     <div class="row">
@@ -139,32 +173,47 @@
                     </div>
                 </div>
             </section>
-            <section id="cantactenos">
+            <!------------------------------------------------------------------------------------------>
+
+            <!---------------------------------Contactenos--------------------------------------------------------->
+            <section id="contactenos">
                 <div class="container">
                     <div class="row">
+
                         <div class="columna columna-50">
+
                             <form action="" method="post">
+
                                 <div class="form-block">
                                     <input type="text" name="nombre" class="form-control">
                                 </div>
+
                                 <div class="form-block">
                                     <input type="email" name="email" class="form-control">
                                 </div>
+
                                 <div class="form-block">
                                     <textarea name="mensaje"></textarea>
                                 </div>
+
                                 <div class="form-block">
                                     <input type="submit" value="Enviar">
                                 </div>
+
                             </form>
+
                         </div>
+
                     </div>
                 </div>
                 <iframe scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" 
                 src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Xochimilco%20+(Ciudad%20de%20M%C3%A9xico)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
                 width="520" height="400" frameborder="0"></iframe>
             </section>
+            <!---------------------------------Servicios--------------------------------------------------------->
+
         </main><!--Cuerpo-->
+
         <footer>
             <div class="container">
                 <div class="row">
@@ -187,7 +236,7 @@
                         <h3>Datos de contacto</h3>
                         <ul>
                             <li>ing.oscar.martinez@gmial.com</li>
-                            <li>5547272179<</li>
+                            <li>5547272179</li>
                             <li>Francisco V. No 51 <br> México, Ciudad de México</li>
                         </ul>
                     </div>
@@ -218,4 +267,5 @@
             </div>
         </footer><!--Pie de pagina-->
     </body>
+
 </html>

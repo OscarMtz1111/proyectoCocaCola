@@ -1,19 +1,43 @@
 
 /*
+   *{Todos los elementos
+    }
 
-*{/*Todos los elementos
-    
-}
-
-p{por clase
+   p{por clase
     background-color: black;
-}
-.container{todas la etiquetas
+    }
 
-}
-
-#inicio{solo una etiqueta
-
-}
-
+   .container{todas la etiquetas
+    }
+    
+    #inicio{solo una etiqueta o id
+    }
 */
+
+.container{
+    border: red solid 1px;
+}
+nav{
+    border: blue solid 1px;
+}
+
+#inicio{
+    border: green solid 5px;
+}
+
+#nosotros{
+    border: rgb(210, 224, 2) solid 5px;
+}
+
+#servicios{
+    border: rgb(253, 94, 2) solid 5px;
+}
+
+#galeria{
+    border: rgb(255, 3, 242) solid 5px;
+}
+
+#Contactenos{
+    border: rgb(0, 243, 231) solid 5px;
+
+}
