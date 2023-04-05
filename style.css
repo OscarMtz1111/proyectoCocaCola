@@ -1,3 +1,75 @@
+*{
+    box-sizing: border-box;/*ayuda a amntener el tamaño original de la caja */
+    /*los elementos no crecen cuando demos espacios internos*/
+
+}
+
+body{
+    font-family: "Roboto";
+    /*agrega el nombre de la tipografia*/
+}
+
+a{
+    display: inline-block;
+    /*cambia el comportamiento de los elementos a inline-block*/
+}
+
+header{
+   
+    padding: 15px 0;
+    /*Espacios internos*/
+
+}
+header .container{
+    display: flex; /*aprobecha el eapacio disponible acomodando a sus elementos hijos*/
+    justify-content: space-between;/*Alinear elementos en base al eje x --los elementos se acomoden teniendo el mismo espacio*/
+    align-items: center;
+
+}
+header .container .logo{
+    width: 100px; /**/
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+
+header .container a{
+    color: red;
+    text-decoration: none;/* quita la lineas a las etiquetas a*/
+    margin: 0 15px;
+}
+
+#inicio{
+    position: relative;
+}
+#inicio img{
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
    *{Todos los elementos
@@ -12,7 +84,7 @@
 
     #inicio{solo una etiqueta o id
     }
-*/
+
 
 body{
     background-color: rgb(236, 144, 30);
@@ -57,3 +129,4 @@ nav{
     border: rgb(0, 248, 0) solid 5px;
 
 }
+*/
