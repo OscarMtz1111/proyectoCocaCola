@@ -51,7 +51,7 @@ header .container .logo{/*Hace referencia al logo que se encuentr en container q
     width: 100px ; /*ancho de imagen*/
 }
 
-header .container a{ /*Hace referencia a la etiqueta 'a' dentro de container que se encuantra dentro de header*/
+header .container nav a{ /*Hace referencia a la etiqueta 'a' dentro de nav, dentro de container que se encuantra dentro de header*/
 
    color: red;/*color a la etiqueta 'a' dentro de container dentro de header*/
    text-decoration: none;/*quita el subrayado de la etiqueta 'a'*/
@@ -62,12 +62,59 @@ header .container a{ /*Hace referencia a la etiqueta 'a' dentro de container que
     text-align: center;
     text-decoration: none;
     padding: 15px 30px;
+    border: none;/* quita el borde atodos los botones*/
 }
 .boton.boton-rojo{/*Hace referencia a la clase boton que a su vez tambien es clase boton-rojo (etiqueta con dos clases)*/
-    color: white;
+    
     background-color: red;
+    color: white;
     font-size: 20px;
     font-weight: bold; /* profundidad de fuente */
+}
+
+.boton.boton-blanco{/*Hace referencia a la clase boton que a su vez tambien es clase boton-rojo (etiqueta con dos clases)*/
+   
+    background-color: white;
+    color:red;
+    font-size: 16px;
+    font-weight: bold; /* profundidad de fuente */
+    border: 1px solid red;
+}
+.boton.boton-negro{/*Hace referencia a la clase boton que a su vez tambien es clase boton-rojo (etiqueta con dos clases)*/
+    
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold; /* profundidad de fuente */
+}
+.boton.boton-negro:hover{/*Hace referencia a la clase boton que a su vez tambien es clase boton-rojo (etiqueta con dos clases)*/
+    
+    background-color:white;
+    color:black;
+    
+}
+
+
+.seccion{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.cuadrado-perfecto{
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+.cuadrado-perfecto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;/*Etiqueta solo para img y video -- cubre todo el espacio*/
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
 }
 
 .container{
@@ -75,8 +122,53 @@ header .container a{ /*Hace referencia a la etiqueta 'a' dentro de container que
     margin: 0 auto;/*Espacio del borde (se agrgego para amntenber espacios iguales de los lados y centrar los elementos)*/
     padding-right: 15px;
     padding-left: 15px;
+    position: relative;
 }
 
+.container-fluid{
+    width: 100% ;/* ancho de un elemento en este caso todos los container */
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;/*si una columna no entra se va hacia abajo*/
+    /*flex-wrap: nowrap; todas las columnas entran enun fila*/
+    margin-left: -15px ;
+    margin-right: -15px;
+}
+
+.columna{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.columna-33{
+    width: 33.33%;
+}
+.columna-41{
+    width: 41.66%;
+}
+
+.columna-50{
+    width: 50%;
+}
+.empujar-50{
+    margin-left:50% ;
+
+}
+.empujar-58{
+    margin-left:58.3% ;
+
+}
+.empujar-66{
+    margin-left:66.66% ;
+
+}
+.empujar-0{
+    margin-left: 0%;
+
+}
 
 /*Selector por id (  #id  "#inicio" )*/
 #inicio{ /*hace referencia a la etiqueta con id inicio*/
@@ -111,3 +203,110 @@ header .container a{ /*Hace referencia a la etiqueta 'a' dentro de container que
     color: white;
     font-size: 16px;
 }
+ #nosotros{
+    background-image: url(imagenes/latas.jpg);/*imagen de fondo*/
+    background-size: cover;/*aprobecha el tamaño del fondo y cubre todo el espacio disponible*/
+    color: white;
+    text-align: center;
+
+ }
+ #nosotros p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    /*margin: 0;*/
+ }
+ #servicios .bloque-servicio{
+    border: 1px solid gray;
+ }
+ #servicios .bloque-servicio .bloque-img-servicio{
+
+ }
+ #servicios .bloque-servicio .bloque-img-servicio img{
+    width: 100%;
+    
+ }
+
+ #servicios .bloque-servicio .bloque-img-servicio.cuadrado-perfecto{
+
+    padding-bottom: 56.25%;/*aprox 16:9 */
+
+ }
+
+ #servicios .bloque-servicio .bloque-contenido-servicio{
+    padding: 15px ;
+    
+ }
+ #servicios .bloque-servicio .bloque-contenido-servicio h3{
+    
+    margin-top: 0;
+    font-size: 25px;
+    
+ }
+ #galeria{
+
+ }
+ #galeria h4{
+    padding-right: 15px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    color:white;
+    font-size: 18px;
+    width: 100%;
+
+    
+ }
+ #galeria img{
+    filter: grayscale(1);/*volver blanco y negro*/
+ }
+
+ #galeria .cuadrado-perfecto:hover img{
+
+    filter: grayscale(0);/*volver blanco y negro*/
+ }
+ #galeria .cuadrado-perfecto:hover h4{
+
+    display: none;
+ }
+
+ #contactenos{
+    position: relative;
+ }
+ #contactenos iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;/*% de que ?alto de que? (en este caso el del fromulario)*/
+ }
+ #contactenos form{
+    padding: 60px;
+    background-color: red;
+ }
+ #contactenos form .form-block{
+    width: 100%;
+    margin-bottom: 15px;
+  
+ }
+ #contactenos form .form-block .form-control{
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+ }
+ #contactenos form .form-block .form-control textarea{
+    display: block;
+    height: 100px;
+    font-size: 16px;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+ }
+ #contactenos form .form-block.bloque-ultimo{
+    margin-bottom:0 ;
+ }
+
+ 
