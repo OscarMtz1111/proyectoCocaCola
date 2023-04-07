@@ -14,6 +14,7 @@ body{
 
 a{
     display: inline-block;/**/
+    text-decoration: none;
 }
 
 
@@ -23,7 +24,7 @@ p{
 }
 header{
 
-    background-color: black;
+    background-color: rgb(253, 253, 253);
     padding: 15px 0;
     position: fixed;/*Se usa para posiciones fijas*/
     top: 0;
@@ -37,6 +38,51 @@ header{
 
 }
 
+footer.seccion{
+    background-color: black ;
+    color: white;
+    padding-bottom:0 ;
+}
+
+footer .barra-footer{
+    background-color: grey;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+}
+footer .redes{
+
+    font-size: 30px;
+    display: flex;
+    /*justify-content: space-between;*/
+}
+footer .redes a{
+
+    margin: 0 7.5px;
+}
+
+footer .logo-footer{
+    width: 100%;
+
+}
+footer p{
+    color: white;
+    margin-bottom: 30px;
+}
+footer a{
+    color: white;
+}
+footer ul{
+    padding-left: 0px;
+    list-style: none;/*Quitar puntos de lista*/
+}
+footer ul li{
+    margin-bottom: 10px;
+}
 /*Selector por clase (  .nombre de la clase  ".container" )*/
 header .container{ /*Hace referencia al container que se encuantra dentro de header*/
 
@@ -142,6 +188,12 @@ header .container nav a{ /*Hace referencia a la etiqueta 'a' dentro de nav, dent
 .columna{
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.columna-25{
+    width: 25%;
+
+
 }
 .columna-33{
     width: 33.33%;
