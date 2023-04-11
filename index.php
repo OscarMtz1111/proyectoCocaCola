@@ -197,7 +197,7 @@
 
                         <div class="columna columna-41 columna-mobile-100 empujar-58 empujar-mobile-0 sinpadding-mobile">
 
-                            <form action="" method="post">
+                            <form action="index.php" method="post">
 
                                 <div class="form-block">
                                     <input type="text" name="nombre" class="form-control" placeholder="Nombre">
@@ -214,6 +214,37 @@
                                 <div class="form-block bloque-ultimo">
                                     <input type="submit" value="Enviar" class="boton boton-negro">
                                 </div>
+
+
+                                <!--Codigo necesario php para el envio de archivos-->
+
+                                <?php
+
+                                    if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+                                        $nombre = $_POST["nombre"] ;
+                                        $email = $_POST["email"] ;
+                                        $mensaje = $_POST["mensaje"] ;
+
+                                        if(isset($nombre)){
+                                            if(isset($email)){
+                                                if(isset($mensaje)){
+
+                                                    $para = "martinezrufino.1111@gmail.com";
+                                                    $asunto = "Esto es una prueba";
+                                                    $cuerpo = $nombre."\n".$email."\n".$mensaje;
+                                                    $adicional = "From: noreply@jacoboamaru.com";
+
+                                                    mail($para,$asunto,$cuerpo,$adicional);
+                                                ?>
+                                                    <p>Envio exitoso</p>
+                                                <?php
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                ?>
 
                             </form>
 
@@ -287,6 +318,13 @@
                 &copy; Derechos Reservados - 2023
             </div>
         </footer><!--Pie de pagina-->
+
+
+        <!------------------------Jquerry-------------------------->
+
+
+        <script src="js/jquery-3.6.4.min.js"></script>
+        <script src="js/funciones.js"></script>
     </body>
 
 </html>

@@ -107,6 +107,7 @@ header .container nav a{ /*Hace referencia a la etiqueta 'a' dentro de nav, dent
 
 header .container .hamb{
     display: none;
+    position:relative;
 }
 
 .boton{
@@ -387,14 +388,15 @@ header .container .hamb{
         transition: all 0.4s ease; /*cambio de un estadoa otro despacio*/
         transform: translateX(100%);
     }
-    header .container nav a{
-        font-size: 30px;
-        margin: 15px 0;
+   
+    header .container nav.open{ /*traslada el nav a su posicion origial*/
+        transform: translateX(0);
     }
     header .container .hamb{
         display: block;
         font-size: 40px;
         color: red;
+        
 
     }
 
@@ -412,7 +414,7 @@ header .container .hamb{
 
     footer .redes{
         justify-content: center;
-        
+
     }
 
 
